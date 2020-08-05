@@ -1,33 +1,35 @@
 {
-  "name": "book-rental",
+  "name": "my-contact-server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "nodemon server",
     "start": "node server.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zoer234/book-rental.git"
+    "url": "git+https://github.com/zzho4662/my-contact-server.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zoer234/book-rental/issues"
+    "url": "https://github.com/zzho4662/my-contact-server/issues"
   },
-  "homepage": "https://github.com/zoer234/book-rental#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.0",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
-    "mysql2": "^2.1.0",
-    "validator": "^13.1.1"
-  },
+  "homepage": "https://github.com/zzho4662/my-contact-server#readme",
   "devDependencies": {
     "nodemon": "^2.0.4"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.8",
+    "jsonwebtoken": "^8.5.1",
+    "moment": "^2.27.0",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.1.0",
+    "path": "^0.12.7",
+    "validator": "^13.1.1"
   }
 }

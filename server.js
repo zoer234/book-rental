@@ -1,14 +1,13 @@
 const express = require("express");
 const dotenv = require("dotenv");
-dotenv.config({ path: " ./cofig/config.env " });
-
-// 내가 만든 파일 require 는 이 아래에 다가 넣는다
-const users = require("./routes/users");
+dotenv.config({ path: "./config/config.env" });
 
 const app = express();
+
 app.use(express.json());
 
-app.use("/api/v1/users", users);
-
 const PORT = process.env.PORT || 5322;
-app.listen(PORT, console.log("서버 가동"));
+
+app.listen(PORT, () => {
+  console.log("App listening on port 5322!");
+});
