@@ -90,3 +90,12 @@ exports.logout = async (req, res, next) => {
     res.status(500).json();
   }
 };
+
+// 모든 책 목록 불러오는 api 25개씩
+let query = `select * from book limit 25`;
+
+// 책 한권씩 대여합니다
+let query = `select * from book limit 1`;
+
+// 책을 대여 하려면 책의 limit_age 보다 회원의 나이가 더 많아야 대여 가능합니다.
+let query = `select * from book where limit_age < id limit 1`;
